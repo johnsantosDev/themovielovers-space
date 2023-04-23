@@ -75,7 +75,7 @@ const review = (imdbID, index) => {
           <div>
             <h6><i class="bi bi-person-circle"></i>&nbsp;Write a small review:</h6>
             <div>
-              <p>
+              <span>
                 {{ user_review }}
                 <i
                   @click="
@@ -85,9 +85,9 @@ const review = (imdbID, index) => {
                   "
                   style="cursor: pointer"
                   v-show="!editing"
-                  class="bi bi-pencil text-primary"
-                ></i>
-              </p>
+                  class="bi bi-pencil text-info"
+                ></i> 
+              </span>
               <div v-show="editing">
                 <div class="mb-3">
                   <textarea

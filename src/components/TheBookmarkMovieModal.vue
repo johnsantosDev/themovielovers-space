@@ -117,10 +117,10 @@ const addToBookmark = () => {
                 class="form-control"
                 type="text"
                 v-model="user_new_categ"
-                placeholder="list name"
+                placeholder="eg. Actions..."
               />
               <div class="form-text">
-                The name of the list you would like to add the movie to eg. Actions...
+                the name of the list to which you would like to add the video.
               </div>
             </div>
             <div v-show="message">
