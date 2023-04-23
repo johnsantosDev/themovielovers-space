@@ -138,8 +138,8 @@ const addToBookmark = () => {
           </div>
 
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" @click="addToBookmark" class="btn btn-primary">
+            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+            <button type="button" @click="addToBookmark" class="btn btn-info">
               Save changes
             </button>
           </div>
