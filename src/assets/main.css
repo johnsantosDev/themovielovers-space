@@ -1,41 +1,41 @@
 @import './base.css';
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap');
-
 #app {
-  max-width: 100vw;
-  font-weight: normal;
-  word-wrap: break-word;
+    max-width: 100vw;
+    font-weight: normal;
+    word-wrap: break-word;
 }
 
 .hero {
-  min-height: 100vh;
-  background-image: linear-gradient(
-    to right bottom,
-    #a81188,
-    #a60099,
-    #9f00ad,
-    #9100c2,
-    #7800da,
-    #6410de,
-    #4b1ae1,
-    #2221e4,
-    #2320d3,
-    #231fc2,
-    #231eb1,
-    #231da1
-  );
-}
-.hero__image {
-  border-radius: 20px;
-  transform: rotateX(0deg) rotateY(-5deg);
-  transform-style: preserve-3d;
+    min-height: 100vh;
+    background-image: url("https://wallpapertag.com/wallpaper/full/7/5/4/623089-nice-background-pictures-1920x1200-ios.jpg");
 }
 
-.hero__image:hover {
-  border: 8px solid rgb(255, 255, 255);
-  transition: border 1s ease-in 0s;
+.movieimage {
+    width: 600px;
+    max-height: 250px;
+    border-radius: 10px;
+}
+
+.movieimage-transform {
+    width: 600px;
+    max-height: 250px;
+    border-radius: 10px;
+    transform: rotateX(0deg) rotateY(-5deg);
+    transform-style: preserve-3d;
+    margin: 10px;
+}
+
+.movieimage:hover {
+    border: 8px solid rgb(13, 17, 111);
+    transition: border 1s ease-in 0s;
+}
+
+.movieimage-transform:hover {
+    border: 8px solid rgb(13, 17, 111);
+    transition: border 1s ease-in 0s;
 }
 
 body {
-  font-family: 'Cantarell', sans-serif;
+    font-family: 'Cantarell', sans-serif;
 }

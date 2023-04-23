@@ -1,103 +1,105 @@
 /* Global Styles */
 
 :root {
-  --primary-color: #33aeb5;
-  --secondary-color: #d9d9d9;
-  --background-color: #f5f5f5;
-  --text-color: #333;
+    --primary-color: #0c4a6c;
+    --secondary-color: #d9d9d9;
+    --background-color: #f5f5f5;
+    --text-color: #333;
 }
 
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .shake {
-  -webkit-animation-name: shake;
-  animation-name: shake;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+    -webkit-animation-name: shake;
+    animation-name: shake;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
+
 @-webkit-keyframes shake {
-  0%,
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
+    0%,
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
 }
+
 @keyframes shake {
-  0%,
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
+    0%,
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
 }
 
 .zoom-in-out-infine {
-  -webkit-animation: zoom-in-out 3s cubic-bezier(0.6, 1, 0.7, 0) 0s infinite normal;
-  -moz-animation: zoom-in-out 3s cubic-bezier(0.6, 1, 0.7, 0) 0s infinite normal;
-  -ms-animation: zoom-in-out 3s cubic-bezier(0.6, 1, 0.7, 0) 0s infinite normal;
-  animation: zoom-in-out 3s cubic-bezier(0.6, 1, 0.7, 0) 0s infinite normal;
+    -webkit-animation: zoom-in-out 3s cubic-bezier(0.6, 1, 0.7, 0) 0s infinite normal;
+    -moz-animation: zoom-in-out 3s cubic-bezier(0.6, 1, 0.7, 0) 0s infinite normal;
+    -ms-animation: zoom-in-out 3s cubic-bezier(0.6, 1, 0.7, 0) 0s infinite normal;
+    animation: zoom-in-out 3s cubic-bezier(0.6, 1, 0.7, 0) 0s infinite normal;
 }
 
 @-webkit-keyframes zoom-in-out {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }
 
 @keyframes zoom-in-out {
-  0% {
-    -ms-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  100% {
-    -ms-transform: scale(1);
-    transform: scale(1);
-  }
+    0% {
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
 }

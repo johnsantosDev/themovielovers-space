@@ -13,13 +13,16 @@ import { RouterLink } from 'vue-router'
     <div class="collapse navbar-collapse" id="navbarNav">
   <ul class="navbar-nav ms-auto">
     <li class="nav-item">
-      <RouterLink class="nav-link" to="/">Home</RouterLink>
+      <RouterLink class="nav-link fw-bold" to="/">Home</RouterLink>
     </li>
     <li class="nav-item">
-      <RouterLink class="nav-link" to="/all-movies-sample">Movies</RouterLink>
+      <RouterLink class="nav-link fw-bold" to="/all-movies-sample">Explore Movies</RouterLink>
     </li>
     <li class="nav-item">
-      <RouterLink class="nav-link" to="/saved-list">TV Shows</RouterLink>
+      <RouterLink class="nav-link fw-bold" to="/saved-list">Saved movies</RouterLink>
+    </li>
+    <li class="nav-item">
+      <RouterLink class="nav-link fw-bold" to="/saved-list">Documentation</RouterLink>
     </li>
   </ul>
 </div>
@@ -48,14 +51,25 @@ import { RouterLink } from 'vue-router'
             </RouterLink>
           </div>
         </div>
-        <div class="col-10 col-sm-8 col-lg-6 mx-auto" style="perspective: 108px">
-          <img
-            src="https://lumiere-a.akamaihd.net/v1/images/p_aladdin2019_17638_d53b09e6.jpeg"
-            class="d-block mx-auto img-fluid hero__image"
-            alt="movie caption"
-            loading="lazy"
-          />
-        </div>
+        <div class="col-10 col-sm-8 col-lg-6 mx-auto">
+  <div class="row">
+    <div class="col-4 col-md-6">
+      <img src="https://lumiere-a.akamaihd.net/v1/images/p_aladdin2019_17638_d53b09e6.jpeg" class="d-block mx-auto img-fluid movieimage" alt="movie caption" loading="lazy">
+    </div>
+    <div class="col-4 col-md-6">
+      <img src="https://lumiere-a.akamaihd.net/v1/images/p_aladdin2019_17638_d53b09e6.jpeg" class="d-block mx-auto img-fluid movieimage-transform" alt="movie caption" loading="lazy">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 col-md-6">
+      <img src="https://lumiere-a.akamaihd.net/v1/images/p_aladdin2019_17638_d53b09e6.jpeg" class="d-block mx-auto img-fluid movieimage" alt="movie caption" loading="lazy">
+    </div>
+    <div class="col-6 col-md-6">
+      <img src="https://lumiere-a.akamaihd.net/v1/images/p_aladdin2019_17638_d53b09e6.jpeg" class="d-block mx-auto img-fluid movieimage-transform" alt="movie caption" loading="lazy">
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   </section>

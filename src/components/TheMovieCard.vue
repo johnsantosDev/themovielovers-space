@@ -63,17 +63,17 @@ const review = (imdbID, index) => {
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h6 class="card-title">{{ title }}</h6>
+          
+          <RouterLink :to="`/single-movie/${imdbId}`" class="card-title"
+            ><strong>{{ title }}</strong></RouterLink>
           <p class="card-text pt-3">
             <i class="bi bi-info-circle-fill"></i> IMDBID : <strong>{{ imdbId }}</strong>
           </p>
-          <RouterLink :to="`/single-movie/${imdbId}`" class="single-movie__view-button"
-            ><i class="bi bi-box-arrow-up-right"></i
-          ></RouterLink>
+          
           <slot></slot>
 
           <div>
-            <h6><i class="bi bi-person-circle"></i>&nbsp;Your review:</h6>
+            <h6><i class="bi bi-person-circle"></i>&nbsp;Write a small review:</h6>
             <div>
               <p>
                 {{ user_review }}
@@ -90,17 +90,15 @@ const review = (imdbID, index) => {
               </p>
               <div v-show="editing">
                 <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Your thoughts about this movie</label
-                  >
                   <textarea
                     class="form-control"
                     id="exampleFormControlTextarea1"
                     v-model="user_review_form"
+                    placeholder="What you think about this movie..."
                     rows="3"
                   ></textarea>
                 </div>
-                <button class="btn btn-primary mb-3" @click="review(imdbId, index)">Save</button>
+                <button class="btn btn-info mb-3" @click="review(imdbId, index)">Save review</button>
               </div>
             </div>
 
@@ -118,11 +116,15 @@ const review = (imdbID, index) => {
 </template>
 
 <style scoped>
-.card {
-  border: 1px solid #a81188;
+.card { 
+
   position: relative;
-  background-color: bisque;
+  background-color: var(--primary-color);
   min-width: 300px;
+  color:white;
+}
+.card-title{
+  color:white;
 }
 @media screen and (width < 300px) {
   .card {
@@ -157,7 +159,7 @@ const review = (imdbID, index) => {
     transform: scale3d(1, 1, 1);
   }
 }
-/*
+
 .card:hover {
   -webkit-animation-name: pulse;
   animation-name: pulse;
@@ -168,11 +170,11 @@ const review = (imdbID, index) => {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-*/
+
 .card-text small {
-  background-color: #a81188;
+  background-color: aqua;
   padding: 5px 10px;
-  color: aqua !important;
+  color: black;
   border-radius: 10px;
   margin-right: 2px;
   font-weight: bolder;

@@ -70,15 +70,15 @@ const del = function (l, i) {
                 :index="-1"
               >
                 <div
-                  style="margin-bottom: 20px; position: relative; font-size: 12px; cursor: pointer"
+                  style="margin-bottom: 20px; position: relative; font-size: 20px; cursor: pointer"
                 >
-                  Your Rating :
+                  Rate :
                   <i
                     @click="rate(movie.imdbID, 1, -1)"
                     class="bi"
                     :class="
                       moviesStore.local_movies_list[movie.imdbID].user_rating > 0
-                        ? 'bi-star-fill icon-primary'
+                        ? 'bi-star-fill icon-info'
                         : 'bi-star'
                     "
                   ></i>
@@ -87,7 +87,7 @@ const del = function (l, i) {
                     class="bi"
                     :class="
                       moviesStore.local_movies_list[movie.imdbID].user_rating > 1
-                        ? 'bi-star-fill icon-primary'
+                        ? 'bi-star-fill icon-info'
                         : 'bi-star'
                     "
                   ></i>
@@ -96,7 +96,7 @@ const del = function (l, i) {
                     class="bi"
                     :class="
                       moviesStore.local_movies_list[movie.imdbID].user_rating > 2
-                        ? 'bi-star-fill icon-primary'
+                        ? 'bi-star-fill icon-info'
                         : 'bi-star'
                     "
                   ></i>
@@ -105,7 +105,7 @@ const del = function (l, i) {
                     class="bi"
                     :class="
                       moviesStore.local_movies_list[movie.imdbID].user_rating > 3
-                        ? 'bi-star-fill icon-primary'
+                        ? 'bi-star-fill icon-info'
                         : 'bi-star'
                     "
                   ></i>
@@ -114,7 +114,7 @@ const del = function (l, i) {
                     class="bi"
                     :class="
                       moviesStore.local_movies_list[movie.imdbID].user_rating > 4
-                        ? 'bi-star-fill icon-primary'
+                        ? 'bi-star-fill icon-info'
                         : 'bi-star'
                     "
                   ></i>

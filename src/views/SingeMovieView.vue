@@ -150,27 +150,27 @@ const m_getBackground = (s) => {
           <div><strong>Type : </strong> {{ thisMovie.Type }}</div>
           <div><strong>Writer : </strong>{{ thisMovie.Writer }}</div>
           <div><strong>Actors :</strong> {{ thisMovie.Actors }}</div>
-          <div style="margin: 20px 0px; position: relative; font-size: 16px">
-            Your Rating : {{ id }}
+          <div style="margin: 20px 0px; position: relative; font-size: 20px">
+            Ratig for this movie :
             <i
               class="bi"
-              :class="localCopy.user_rating > 0 ? 'bi-star-fill icon-primary' : 'bi-star'"
+              :class="localCopy.user_rating > 0 ? 'bi-star-fill icon-info' : 'bi-star'"
             ></i>
             <i
               class="bi"
-              :class="localCopy.user_rating > 1 ? 'bi-star-fill icon-primary' : 'bi-star'"
+              :class="localCopy.user_rating > 1 ? 'bi-star-fill icon-info' : 'bi-star'"
             ></i>
             <i
               class="bi"
-              :class="localCopy.user_rating > 2 ? 'bi-star-fill icon-primary' : 'bi-star'"
+              :class="localCopy.user_rating > 2 ? 'bi-star-fill icon-info' : 'bi-star'"
             ></i>
             <i
               class="bi"
-              :class="localCopy.user_rating > 3 ? 'bi-star-fill icon-primary' : 'bi-star'"
+              :class="localCopy.user_rating > 3 ? 'bi-star-fill icon-info' : 'bi-star'"
             ></i>
             <i
               class="bi"
-              :class="localCopy.user_rating > 4 ? 'bi-star-fill icon-primary' : 'bi-star'"
+              :class="localCopy.user_rating > 4 ? 'bi-star-fill icon-info' : 'bi-star'"
             ></i>
           </div>
           <TheBookmarkMovieModal
@@ -181,9 +181,8 @@ const m_getBackground = (s) => {
         </div>
         <section>
           <div class="container my-5 py-5 text-dark rounded">
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-12 col-lg-12 col-xl-8">
-                <h1 class="text-light">Review:</h1>
+            <div class="row d-flex justify-content-center"> 
+                <h3 class="text-light">Review:</h3>
                 <div
                   class="card text-light"
                   style="background-color: rgba(255, 255, 255, 0.2)"
@@ -202,8 +201,7 @@ const m_getBackground = (s) => {
                       {{ localCopy.user_review }}
                     </p>
                   </div>
-                </div>
-              </div>
+                </div> 
             </div>
           </div>
         </section>
@@ -347,27 +345,27 @@ strong {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 50px 50px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 .movie__data {
   position: relative;
   background-image: linear-gradient(
     to right bottom,
-    #a81188,
-    #a60099,
-    #9f00ad,
-    #9100c2,
-    #7800da,
-    #6410de,
-    #4b1ae1,
-    #2221e4,
-    #2320d3,
-    #231fc2,
-    #231eb1,
+    #0d0724,
+    #2a1b6a,
+    #2f16ac,
+    #201533,
+    #14081e,
+    #15101d,
+    #1f163d,
+    #1d1d32,
+    #0e0e20,
+    #0f0f22,
+    #181733,
     #231da1
   );
   top: -40px;
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 30px 0px;
   width: 70vw;
   margin: auto;
@@ -402,6 +400,7 @@ a {
   width: 300px;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius:10px;
 }
 
 @media screen and (width < 350px) {
@@ -413,7 +412,7 @@ a {
 .carousel-control-prev,
 .carousel-control-next {
   font-size: 30px;
-  color: #2221e4;
+  color:aqua;
   opacity: 1;
 }
 </style>

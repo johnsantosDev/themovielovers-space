@@ -69,30 +69,35 @@ const rate = (imdbID, rating, index) => {
       <div class="col cards-container">
         <TheLoadingIcon v-show="loading" />
         <div v-show="!loading" class="mt-5 container__search-bar">
-          <label for="inputPassword5" class="form-label">Search...</label>
+          <label  class="form-label">Search Movies</label>
           <div class="input-group">
             <input
               type="search"
               class="form-control"
               aria-describedby="searchBox"
-              placeholder="Enter the title here...."
+              placeholder="Movie title...."
               v-model="search_title"
               :disabled="loading ? true : false"
             />
             <input
               type="search"
               aria-label="Last name"
-              placeholder="The release year here"
+              placeholder="Release year..."
               class="form-control"
               v-model="search_year"
             />
             <button class="btn btn-outline-primary" type="button" @click="submitSearch">
-              <i class="bi bi-search"></i>Search
+              <i class="bi bi-search"></i>
             </button>
           </div>
-          <div id="searchBox" class="form-text">
-            This searchbar allow you to search movies by title and/or by release year depending on
-            your specific need
+          <div id="searchBox" class="form-text"> 
+Looking for a specific movie? Our search bar allows you to easily find movies by their title or release year. Hint : Punk Rock Vegan Movie, 2023
+          </div>
+        </div>
+        
+        <div class="mt-4 mb-2" v-show="error_message.length > 0">
+          <div class="alert alert-danger d-flex align-items-start" role="alert">
+            <i class="bi bi-exclamation-diamond"></i>&nbsp;<span>{{ error_message }}</span>
           </div>
         </div>
         <div v-show="!loading" class="mt-5 container__search-bar">
@@ -123,20 +128,18 @@ const rate = (imdbID, rating, index) => {
             ></i>
           </div>
         </div>
-        <div class="mt-4 mb-2" v-show="error_message.length > 0">
-          <div class="alert alert-danger d-flex align-items-start" role="alert">
-            <i class="bi bi-exclamation-diamond"></i>&nbsp;<span>{{ error_message }}</span>
-          </div>
-        </div>
+
         <div
           v-show="!loading"
           class="mt-5 row row-cols-1 row-cols-md-2 row-cols-lg-3 cols-xl-4 g-5"
         >
+        
           <div
             v-for="(movie, index) in moviesStore.movies"
             :key="index"
             class="col movie-single-card"
           >
+          
             <TheMovieCard
               :title="movie.Title"
               :year="movie.Year"
@@ -147,33 +150,33 @@ const rate = (imdbID, rating, index) => {
               :index="index"
             >
               <div
-                style="margin-bottom: 40px; position: relative; font-size: 12px; cursor: pointer"
+                style="margin-bottom: 40px; position: relative; font-size: 20px; cursor: pointer"
               >
-                Your Rating :
+                Rate :
                 <i
                   @click="rate(movie.imdbID, 1, index)"
                   class="bi"
-                  :class="movie.user_rating > 0 ? 'bi-star-fill icon-primary' : 'bi-star'"
+                  :class="movie.user_rating > 0 ? 'bi-star-fill icon-info' : 'bi-star'"
                 ></i>
                 <i
                   @click="rate(movie.imdbID, 2, index)"
                   class="bi"
-                  :class="movie.user_rating > 1 ? 'bi-star-fill icon-primary' : 'bi-star'"
+                  :class="movie.user_rating > 1 ? 'bi-star-fill icon-info' : 'bi-star'"
                 ></i>
                 <i
                   @click="rate(movie.imdbID, 3, index)"
                   class="bi"
-                  :class="movie.user_rating > 2 ? 'bi-star-fill icon-primary' : 'bi-star'"
+                  :class="movie.user_rating > 2 ? 'bi-star-fill icon-info' : 'bi-star'"
                 ></i>
                 <i
                   @click="rate(movie.imdbID, 4, index)"
                   class="bi"
-                  :class="movie.user_rating > 3 ? 'bi-star-fill icon-primary' : 'bi-star'"
+                  :class="movie.user_rating > 3 ? 'bi-star-fill icon-info' : 'bi-star'"
                 ></i>
                 <i
                   @click="rate(movie.imdbID, 5, index)"
                   class="bi"
-                  :class="movie.user_rating > 4 ? 'bi-star-fill icon-primary' : 'bi-star'"
+                  :class="movie.user_rating > 4 ? 'bi-star-fill icon-info' : 'bi-star'"
                 ></i>
               </div>
             </TheMovieCard>
