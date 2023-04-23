@@ -44,10 +44,10 @@ import { RouterLink } from 'vue-router'
               class="btn btn-dark btn-lg px-4 me-md-2"
               to="/all-movies-sample"
             >
-              Start exploring
+              Getting started
             </RouterLink>
             <RouterLink type="button" class="btn btn-dark btn-lg px-4 me-md-2" to="/saved-list">
-              View my saved lists
+              My space
             </RouterLink>
           </div>
         </div>
