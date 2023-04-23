@@ -1,9 +1,32 @@
 # movierating-app
 # Movie-rating-app
 
-This is a website that will be your one stop shop for bookeeping your movies. With a large database of movie, we are sure to get you covered.
+This site allows you to explore thousands of videos from the IMDB database, it gives you the possibility to bookmark videos by creating a list for your selection, storing them in your browser, you also have the possibility of rating videos and a classification of videos according to categories. The site also allows you to leave a review to videos
 
-## To run in your local machine
+### Technologies used :
+ - Javascript
+ - Vue.JS 3
+ - Vite.JS
+ - Bootstrap
+ - OMDBAPI (https://www.omdbapi.com/)
+
+
+## Clone the project by running
+
+```sh
+git clone https://github.com/johnsantosDev/movierating-app.git
+```
+
+## Create your api key 
+
+- Go to the https://www.omdbapi.com/ website and create an api key
+- Create a .env and add this line
+
+```sh
+VITE_API_KEY=your_api_key
+```
+
+## Install project dependancies
 
 ```sh
 npm install
@@ -27,9 +50,3 @@ npm run build
 ```sh
 npm run lint
 ```
-
-
-### Technologies used :
- - Javascript & Vue JS
- - Bootstrap
- - API provided By https://www.omdbapi.com/
