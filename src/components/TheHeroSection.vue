@@ -22,7 +22,7 @@ import { RouterLink } from 'vue-router'
       <RouterLink class="nav-link fw-bold" to="/saved-list">Saved movies</RouterLink>
     </li>
     <li class="nav-item">
-      <RouterLink class="nav-link fw-bold" to="/saved-list">Documentation</RouterLink>
+      <a class="nav-link fw-bold" target="_blank" href="https://vuejs.org/guide/introduction.html">Documentation</a>
     </li>
   </ul>
 </div>
@@ -54,18 +54,18 @@ import { RouterLink } from 'vue-router'
         <div class="col-10 col-sm-8 col-lg-6 mx-auto">
   <div class="row">
     <div class="col-4 col-md-6">
-      <img src="https://lumiere-a.akamaihd.net/v1/images/p_aladdin2019_17638_d53b09e6.jpeg" class="d-block mx-auto img-fluid movieimage" alt="movie caption" loading="lazy">
+      <img src="https://lumiere-a.akamaihd.net/v1/images/p_aladdin2019_17638_d53b09e6.jpeg" class="d-block mx-auto img-fluid movieimage" alt="description of the movie" loading="lazy">
     </div>
     <div class="col-4 col-md-6">
-      <img src="https://lumiere-a.akamaihd.net/v1/images/p_aladdin2019_17638_d53b09e6.jpeg" class="d-block mx-auto img-fluid movieimage-transform" alt="movie caption" loading="lazy">
+      <img src="https://th.bing.com/th/id/R.6b9d0940180ec2fb5d98ad6e54158905?rik=ON88gPzK28sSiw&riu=http%3a%2f%2fwww.aceshowbiz.com%2fimages%2fstill%2fdragonball_poster03.jpg&ehk=jrFksZltuubiUPb1dTpCe4i7G6lg84VWA9L%2bVVT422w%3d&risl=&pid=ImgRaw&r=0" class="d-block mx-auto img-fluid movieimage-transform" alt="description of the movie" loading="lazy">
     </div>
   </div>
   <div class="row">
     <div class="col-6 col-md-6">
-      <img src="https://lumiere-a.akamaihd.net/v1/images/p_aladdin2019_17638_d53b09e6.jpeg" class="d-block mx-auto img-fluid movieimage" alt="movie caption" loading="lazy">
+      <img src="https://th.bing.com/th/id/OIP.JfFXSTh1UiR2cZjCCvKgCwHaLk?pid=ImgDet&w=600&h=937&rs=1" class="d-block mx-auto img-fluid movieimage" alt="description of the movie" loading="lazy">
     </div>
     <div class="col-6 col-md-6">
-      <img src="https://lumiere-a.akamaihd.net/v1/images/p_aladdin2019_17638_d53b09e6.jpeg" class="d-block mx-auto img-fluid movieimage-transform" alt="movie caption" loading="lazy">
+      <img src="https://1.bp.blogspot.com/-Toi5ZVVRnmc/X6lWxWXL0pI/AAAAAAAAAX0/PAFBqGJPFR4rXdoWhBR2YHG2WYnL8iP8QCLcBGAsYHQ/w410-h640/MV5BODg5ZjA1NTgtZTQ0MS00ZjQ1LTk4MmUtMjdkNzE4ZmVhMzQ1XkEyXkFqcGdeQXVyNTgxODY5ODI%2540._V1_.jpg" class="d-block mx-auto img-fluid movieimage-transform" alt="description of the movie" loading="lazy">
     </div>
   </div>
 </div>

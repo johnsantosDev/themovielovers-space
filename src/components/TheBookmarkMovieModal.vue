@@ -42,7 +42,7 @@ const addToBookmark = () => {
       title: props.title
     })
 
-    message.value = 'Successfully created the list and add the movie to it!'
+    message.value = 'Successfully added the movie to your newly created list!'
     return
   }
 

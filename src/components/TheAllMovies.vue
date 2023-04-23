@@ -91,7 +91,7 @@ const rate = (imdbID, rating, index) => {
             </button>
           </div>
           <div id="searchBox" class="form-text"> 
-Looking for a specific movie? Our search bar allows you to easily find movies by their title or release year. Hint : Punk Rock Vegan Movie, 2023
+              Looking for a specific movie? Our search bar allows you to easily find movies by their title or release year. Hint : Punk Rock Vegan Movie, 2023
           </div>
         </div>
         
@@ -113,9 +113,7 @@ Looking for a specific movie? Our search bar allows you to easily find movies by
               :class="{ 'text-primary': sort_logic[0] }"
               class="bi bi-arrow-down-circle-fill"
             ></i>
-          </div>
-          <div>
-            Or by release year
+           Or by release year
             <i
               @click="() => resort_logic(1, false)"
               :class="{ 'text-primary': !sort_logic[1] }"
@@ -197,7 +195,7 @@ Looking for a specific movie? Our search bar allows you to easily find movies by
   overflow-x: hidden;
 }
 .container__search-bar {
-  width: 40%;
+  width: 99%;
 }
 .icon-primary {
   color: #a81188;
