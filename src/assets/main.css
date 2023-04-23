@@ -12,14 +12,14 @@
 }
 
 .movieimage {
-    width: 600px;
-    max-height: 250px;
+    width: 400px;
+    max-height: 300px;
     border-radius: 10px;
 }
 
 .movieimage-transform {
-    width: 600px;
-    max-height: 250px;
+    width: 400px;
+    max-height: 300px;
     border-radius: 10px;
     transform: rotateX(0deg) rotateY(-5deg);
     transform-style: preserve-3d;
@@ -38,4 +38,8 @@
 
 body {
     font-family: 'Cantarell', sans-serif;
+}
+
+.div-separator{
+    margin-top:20px;
 }

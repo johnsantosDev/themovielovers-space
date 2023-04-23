@@ -86,8 +86,8 @@ const rate = (imdbID, rating, index) => {
               class="form-control"
               v-model="search_year"
             />
-            <button class="btn btn-outline-primary" type="button" @click="submitSearch">
-              <i class="bi bi-search"></i>
+            <button class="btn btn-outline-dark" type="button" @click="submitSearch">
+              <i class="bi bi-search"></i> Search
             </button>
           </div>
           <div id="searchBox" class="form-text"> 
@@ -104,24 +104,24 @@ const rate = (imdbID, rating, index) => {
           <div>
             Sort by title
             <i
-              :class="{ 'text-primary': !sort_logic[0] }"
+              :class="{ 'text-info': !sort_logic[0] }"
               @click="() => resort_logic(0, false)"
               class="bi bi-arrow-up-circle-fill"
             ></i>
             <i
               @click="() => resort_logic(0, true)"
-              :class="{ 'text-primary': sort_logic[0] }"
+              :class="{ 'text-info': sort_logic[0] }"
               class="bi bi-arrow-down-circle-fill"
             ></i>
            Or by release year
             <i
               @click="() => resort_logic(1, false)"
-              :class="{ 'text-primary': !sort_logic[1] }"
+              :class="{ 'text-info': !sort_logic[1] }"
               class="bi bi-arrow-up-circle-fill"
             ></i>
             <i
               @click="() => resort_logic(1, true)"
-              :class="{ 'text-primary': sort_logic[1] }"
+              :class="{ 'text-info': sort_logic[1] }"
               class="bi bi-arrow-down-circle-fill"
             ></i>
           </div>

@@ -38,6 +38,7 @@ import { RouterLink } from 'vue-router'
           <p class="lead">
             Look no further than our movie rating website! Whether you're searching for the latest releases or your favorite classics, we have it all. With an extensive collection of titles spanning a variety of genres, you're sure to find something that suits your taste.
           </p>
+          <div class="div-separator"></div>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             <RouterLink
               type="button"
@@ -51,12 +52,12 @@ import { RouterLink } from 'vue-router'
             </RouterLink>
           </div>
         </div>
-        <div class="col-10 col-sm-8 col-lg-6 mx-auto">
+        <div class="col-6 col-sm-8 col-lg-6 mx-auto">
   <div class="row">
-    <div class="col-4 col-md-6">
-      <img src="https://lumiere-a.akamaihd.net/v1/images/p_aladdin2019_17638_d53b09e6.jpeg" class="d-block mx-auto img-fluid movieimage" alt="description of the movie" loading="lazy">
+    <div class="col-6 col-md-6">
+      <img src="https://th.bing.com/th/id/R.73edef008a944da2cdde068f77c0cdd5?rik=jJv%2bGdeOrbT5Ww&pid=ImgRaw&r=0" class="d-block mx-auto img-fluid movieimage" alt="description of the movie" loading="lazy">
     </div>
-    <div class="col-4 col-md-6">
+    <div class="col-6 col-md-6">
       <img src="https://th.bing.com/th/id/R.6b9d0940180ec2fb5d98ad6e54158905?rik=ON88gPzK28sSiw&riu=http%3a%2f%2fwww.aceshowbiz.com%2fimages%2fstill%2fdragonball_poster03.jpg&ehk=jrFksZltuubiUPb1dTpCe4i7G6lg84VWA9L%2bVVT422w%3d&risl=&pid=ImgRaw&r=0" class="d-block mx-auto img-fluid movieimage-transform" alt="description of the movie" loading="lazy">
     </div>
   </div>
