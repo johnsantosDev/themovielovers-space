@@ -16,7 +16,7 @@ import { RouterLink } from 'vue-router'
       <RouterLink class="nav-link fw-bold" to="/">Home</RouterLink>
     </li>
     <li class="nav-item">
-      <RouterLink class="nav-link fw-bold" to="/all-movies-sample">Explore Movies</RouterLink>
+      <RouterLink class="nav-link fw-bold" to="/allmovies">Explore Movies</RouterLink>
     </li>
     <li class="nav-item">
       <RouterLink class="nav-link fw-bold" to="/saved-list">Saved movies</RouterLink>
@@ -43,7 +43,7 @@ import { RouterLink } from 'vue-router'
             <RouterLink
               type="button"
               class="btn btn-dark btn-lg px-4 me-md-2"
-              to="/all-movies-sample"
+              to="/allmovies"
             >
               Getting started
             </RouterLink>

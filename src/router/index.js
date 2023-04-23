@@ -8,7 +8,7 @@ const router = createRouter({
       component: () => import('../views/HomePageExtendedView.vue')
     },
     {
-      path: '/all-movies-sample',
+      path: '/allmovies',
       name: 'moviesample',
       component: () => import('../views/MovieSampleView.vue')
     },

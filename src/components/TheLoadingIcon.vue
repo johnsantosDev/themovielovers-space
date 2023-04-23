@@ -1,111 +1,105 @@
 <template>
-  <div class="three-body">
-    <div class="three-body__dot"></div>
-    <div class="three-body__dot"></div>
-    <div class="three-body__dot"></div>
+  <div class="preloader" :style="cssVars">
+    <span class="rot-1"></span>
+    <span class="rot-2"></span>
+    <span class="rot-3"></span>
+    <span class="rot-4"></span>
+    <span class="rot-5"></span>
+    <span class="rot-6"></span>
+    <span class="rot-7"></span>
+    <span class="rot-8"></span>
   </div>
 </template>
 
+<script>
+export default {
+  name: 'Preloader',
+  props: {
+    color: {
+      type: String,
+      default: '#0c4a6c',
+    },
+    scale: {
+      type: Number,
+      default: 1,
+    },
+  },
+  computed: {
+    cssVars() {
+      return {
+        '--color': this.color,
+        '--scale': this.scale,
+      }
+    }
+  }
+}
+</script>
+
 <style scoped>
-.three-body {
-  --uib-size: 35px;
-  --uib-speed: 0.8s;
-  --uib-color: #a81188;
+.preloader {
   position: relative;
-  display: inline-block;
-  height: var(--uib-size);
-  width: var(--uib-size);
-  animation: spin78236 calc(var(--uib-speed) * 2.5) infinite linear;
+  width: 125px;
+  height: 125px;
+  margin: auto;
+  transform: scale(var(--scale));
 }
-
-.three-body__dot {
+.preloader > span {
   position: absolute;
-  height: 100%;
-  width: 30%;
+  background-color: transparent;
+  height: 22px;
+  width: 22px;
+  border-radius: 12px;
+  animation-name: f_fadeG;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
 }
-
-.three-body__dot:after {
-  content: '';
-  position: absolute;
-  height: 0%;
-  width: 100%;
-  padding-bottom: 100%;
-  background-color: var(--uib-color);
-  border-radius: 50%;
-}
-
-.three-body__dot:nth-child(1) {
-  bottom: 5%;
+.rot-1 {
   left: 0;
-  transform: rotate(60deg);
-  transform-origin: 50% 85%;
+  top: 51px;
+  animation-delay: 0.45s;
 }
-
-.three-body__dot:nth-child(1)::after {
-  bottom: 0;
-  left: 0;
-  animation: wobble1 var(--uib-speed) infinite ease-in-out;
-  animation-delay: calc(var(--uib-speed) * -0.3);
+.rot-2 {
+  left: 15px;
+  top: 15px;
+  animation-delay: 0.6s;
 }
-
-.three-body__dot:nth-child(2) {
-  bottom: 5%;
-  right: 0;
-  transform: rotate(-60deg);
-  transform-origin: 50% 85%;
-}
-
-.three-body__dot:nth-child(2)::after {
-  bottom: 0;
-  left: 0;
-  animation: wobble1 var(--uib-speed) infinite calc(var(--uib-speed) * -0.15) ease-in-out;
-}
-
-.three-body__dot:nth-child(3) {
-  bottom: -5%;
-  left: 0;
-  transform: translateX(116.666%);
-}
-
-.three-body__dot:nth-child(3)::after {
+.rot-3 {
+  left: 51px;
   top: 0;
-  left: 0;
-  animation: wobble2 var(--uib-speed) infinite ease-in-out;
+  animation-delay: 0.75s;
 }
-
-@keyframes spin78236 {
+.rot-4 {
+  right: 15px;
+  top: 15px;
+  animation-delay: 0.9s;
+}
+.rot-5 {
+  right: 0;
+  top: 51px;
+  animation-delay: 1.05s;
+}
+.rot-6 {
+  right: 15px;
+  bottom: 15px;
+  animation-delay: 1.2s;
+}
+.rot-7 {
+  left: 51px;
+  bottom: 0;
+  animation-delay: 1.35s;
+}
+.rot-8 {
+  left: 15px;
+  bottom: 15px;
+  animation-delay: 1.5s;
+}
+@keyframes f_fadeG {
   0% {
-    transform: rotate(0deg);
+    background-color: var(--color);
   }
-
   100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes wobble1 {
-  0%,
-  100% {
-    transform: translateY(0%) scale(1);
-    opacity: 1;
-  }
-
-  50% {
-    transform: translateY(-66%) scale(0.65);
-    opacity: 0.8;
-  }
-}
-
-@keyframes wobble2 {
-  0%,
-  100% {
-    transform: translateY(0%) scale(1);
-    opacity: 1;
-  }
-
-  50% {
-    transform: translateY(66%) scale(0.65);
-    opacity: 0.8;
+    background-color: transparent;
   }
 }
 </style>
