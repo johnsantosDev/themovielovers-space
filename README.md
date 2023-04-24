@@ -1,6 +1,8 @@
 # movierating-app
 
-This site allows you to explore thousands of videos from the IMDB database, it gives you the possibility to bookmark videos by creating a list for your selection, storing them in your browser, you also have the possibility of rating videos and a classification of videos according to categories. The site also allows you to leave a review to videos
+This site allows you to explore thousands of videos from the IMDB database, it gives you the possibility to bookmark videos by creating a list for your selection, storing them in your browser, you also have the possibility of rating videos and a classification of videos according to categories. The site also allows you to leave a review to videos.
+
+The project is accessible here : https://ubiquitous-pithivier-2bfd68.netlify.app/
 
 ### Technologies used :
  - Javascript
