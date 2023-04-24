@@ -15,7 +15,7 @@ The project is accessible here : https://ubiquitous-pithivier-2bfd68.netlify.app
 ## Clone the project by running
 
 ```sh
-git clone https://github.com/johnsantosDev/movierating-app.git
+git clone https://github.com/johnsantosDev/themovielovers-space.git
 ```
 
 ## Create your api key 
